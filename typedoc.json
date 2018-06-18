@@ -1,0 +1,18 @@
+{
+  "mode": "modules",
+  "out": "docs",
+  "name": "benchcore-api",
+  "theme": "default",
+  "emitDecoratorMetadata": true,
+  "experimentalDecorators": true,
+  "excludeExternals": true,
+  "excludeNotExported": true,
+  "excludePrivate": true,
+  "exclude": "**/*+(e2e|spec|index).ts",
+  "listInvalidSymbolLinks": true,
+  "target": "ES6",
+  "moduleResolution": "node",
+  "preserveConstEnums": true,
+  "module": "commonjs",
+  "external-modulemap": ".*\/src\/([\\w\\-_]+)\/"
+}
