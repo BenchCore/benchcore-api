@@ -1,6 +1,6 @@
 {
   "name": "benchcore-api",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "BenchCore API Wrapper Written In TypeScript For Interacting With BenchCore RootChains and SideChains.",
   "main": "index.js",
   "types": "index.d.ts",
