@@ -2,7 +2,7 @@ import config from '../config';
 import { Peer } from './Peer';
 
 export enum NetworkType {
-  Bexnet,
+  Bench,
   Dexnet,
 }
 
@@ -48,7 +48,7 @@ export class Network {
   /**
    * Get network from default config file based on type.
    */
-  public static getDefault(type: NetworkType = NetworkType.Bexnet): Network {
+  public static getDefault(type: NetworkType = NetworkType.Bench): Network {
     const item = NetworkType[type].toLowerCase();
     const networks = config.networks;
 

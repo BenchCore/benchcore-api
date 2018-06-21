@@ -56,7 +56,7 @@ client.delegate.list().subscribe((list) => {
 ```js
 import { PrivateKey } from 'benchcore-api/core';
 
-// if no specify a second param, default is bexnet
+// if no specify a second param, default is bench
 const key = PrivateKey.fromSeed('again sell dizzy shoes stumble bonus salt two exhibit slender romance fade');
 console.log(key.getPublicKey().getAddress()); // BAfYEq6hRSMwV2yx45M1bpNx5KgdPyVBZW
 ```

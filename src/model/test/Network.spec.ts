@@ -12,13 +12,13 @@ describe('Network', () => {
   });
 
   it ('should have properties', () => {
-    expect(NetworkType).have.property('Bexnet');
+    expect(NetworkType).have.property('Bench');
     expect(Network).have.property('getDefault');
   });
 
   it('should create a instance of BEX network', () => {
-    const network = Network.getDefault(NetworkType.Bexnet);
-    expect(network.name).to.be.equal('bexnet');
+    const network = Network.getDefault(NetworkType.Bench);
+    expect(network.name).to.be.equal('bench');
   });
 
   it('should create a instance of DEX network', () => {
@@ -29,7 +29,7 @@ describe('Network', () => {
   it('should create a manual instance of network', () => {
     const network = new Network;
 
-    network.type = NetworkType.Bexnet;
+    network.type = NetworkType.Bench;
     network.name = 'bex';
     network.nethash = '7ed0d6af1eb2ace5c9f23d877607303edc98f3c1f48680967acac644f5339852';
 
@@ -42,7 +42,7 @@ describe('Network', () => {
     peer.ip = 'network.bex.life';
     peer.port = 6620;
 
-    network.type = NetworkType.Bexnet;
+    network.type = NetworkType.Bench;
     network.name = 'bex';
     network.nethash = '7ed0d6af1eb2ace5c9f23d877607303edc98f3c1f48680967acac644f5339852';
 
@@ -56,7 +56,7 @@ describe('Network', () => {
     peer.ip = 'michaelx.bex.life';
     peer.port = 6620;
 
-    network.type = NetworkType.Bexnet;
+    network.type = NetworkType.Bench;
     network.name = 'bex';
     network.nethash = '7ed0d6af1eb2ace5c9f23d877607303edc98f3c1f48680967acac644f5339852';
 
